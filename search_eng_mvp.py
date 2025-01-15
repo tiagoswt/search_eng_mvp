@@ -41,7 +41,7 @@ def main():
             st.write("**Top Results:**")
             for rank, idx in enumerate(indices[0]):
                 st.markdown(f"**Result {rank+1}:**")
-                st.write(f"- **Ref**: {df.iloc[idx]['ref']}")
+                st.write(f"- **Ref**: {df.iloc[idx]['ref']} | **Product name**: {df.iloc[idx]['itemdescriptionEN']} | **Brand**: {df.iloc[idx]['Brand']}")
                 # Uncomment or add additional fields as desired:
                 # st.write(f"- Brand: {df.iloc[idx]['Brand']}")
                 # st.write(f"- Description: {df.iloc[idx]['itemdescriptionEN']}")
